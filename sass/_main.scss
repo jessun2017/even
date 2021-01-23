@@ -22,10 +22,29 @@ main {
 
   .about,
   .post {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+    height: 100%;
+
+    .post__meta {
+      height: 100%;
+      float: right;
+      line-height: 2rem;
+      vertical-align: middle;
+      opacity:.5;
+      margin-right: 1rem;
+    }
+
+    .post__time {
+      height: 100%;
+      float: right;
+      vertical-align: middle;
+      font-family: "Trebuchet MS",Verdana,"Verdana Ref","Segoe UI",Candara,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    }
 
     .post__title {
       font-family: $decoration-font-family;
+      height: 100%;
+      vertical-align: middle;
 
       a {
         color: #34495e;
@@ -37,7 +56,7 @@ main {
     }
 
     code {
-      padding: 3px 5px;
+      padding: 3px 3px;
       border-radius: 4px;
       color: $code-colour;
       background: $secondary-colour;
@@ -175,7 +194,7 @@ main {
   }
 
   .post + .post {
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px dashed #e6e6e6;
   }
 
   .pagination {
